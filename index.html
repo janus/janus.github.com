@@ -1,13 +1,17 @@
+---
+layout:default
+title: My way, my life
+---
 <h1>Recent Post <small class="subhead">from my programming journey </small></h1>
 <ul class="posts post_listing">
-
- Time to learn Assembly Language
-
+{% for post in site.posts %}
+ {{post.title }}
+{% endfor %}
 </ul>
 
 <ul class="post">
-
-<li><a href="http://janus.github.com/2011/07/16/first-post.html">Time to learn Assembly Language</a>
-<span>16 Jul 2011</span></li>
-
+{% for post in site.posts %}
+<li><a href="{{site.base_url }}{{ post.url }}">{{ post.title }}</a>
+<span>{{ post.date | date_to_string }}</span></li>
+{% endfor %}
 
