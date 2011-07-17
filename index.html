@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Envy Labs</title>
-</head>
-<body>
-<h1>Envy Labs</h1>
+---
+layout:default
+title: My way, my life
+---
+<h1>Recent Post <small class="subhead">from my programming journey </small></h1>
+<ul class="posts post_listing">
+{% for post in site.posts %}
+ {{post.title }}
+{% endfor %}
+</ul>
 
-<h2><a href="/2011/07/16/first-post.html">Envy Post</a></h2>
-<p>This will be the best blog ever Good.</p>
+<ul class="post">
+{% for post in site.posts %}
+<li><a href="{{site.base_url }}{{ post.url }}">{{ post.title }}</a>
+<span>{{ post.date | date_to_string }}</span></li>
+{% endfor %}
 
-<em>Post on 16 July 2011.</em>
-
-
-
-
-</body>
-</html>
