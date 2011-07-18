@@ -1,20 +1,18 @@
-
 ---
-layout: default
+layout: home
 title: My way, my life
 desc: My new way of looking at programming and computing as a whole
 ---
 
 
 <h2>Recent Posts <small class="subhead">from my programming journey </small></h2>
-<ul class="posts post_listing">
-{% for post in site.posts %}
- {{  post.title }}
-{% endfor %}
-</ul>
-<ul class="post">
-{% for post in site.posts %}
-<li><a href="{{site.base_url }}{{ post.url }}">{{ post.title }}</a>
-<span>{{ post.date | date_to_string }}</span></li>
-{% endfor %}
 
+<ul class="posts post_listing">
+
+{% for post in site.posts %}
+
+<li><a href="{{site.base_url }}{{ post.url }}">{{ post.title }}</a>
+
+<span>{{ post.date | date_to_string }}</span></li>
+
+{% endfor %}

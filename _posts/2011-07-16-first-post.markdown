@@ -1,6 +1,9 @@
 ---
 layout: default
-title:  Time to learn Assembly Language 
+title:  Time to learn Assembly Language
+tags:
+- Language
+- Assembly  
 ---
 
 In the past I found it extremely hard to find my way within assembly language. Lately, I stumbled upon a course on compiler which is and area I have'
