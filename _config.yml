@@ -1,0 +1,13 @@
+source:      .
+destination: ./_site
+includes:    ./_includes
+
+pygments:    true
+markdown:    rdiscount
+
+
+base_url: http://janus.github.com
+#base_url: /
+
+
+exclude: ['Rakefile', 'README.markdown', 'config.rb']
